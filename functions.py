@@ -181,18 +181,18 @@ def generate_images(api_key, characters, taken_image, user_prompt):
         payload = {
             "alchemy": True,
             "presetStyle": "CINEMATIC",
-            "contrastRatio": 0,
             "highResolution": True,
             "guidance_scale": 7,
             "height": 512,
             "num_images": 1,
             "public": False,
-            "init_strength" : .3,
+            "init_strength" : .35,
             "imagePromptWeight": 7, 
             "modelId": "6bef9f1b-29cb-40c7-b9df-32b51c1f67d3", # Setting model ID to Leonardo Creative
             "prompt": prompt,
             "width": 512,
-            "init_image_id": image_id
+            "init_image_id": image_id,
+            "negative_prompt": "Do not change the gender, ethnicity, skin color or race",
         }
 
         response = requests.post(url, json=payload, headers=headers)
