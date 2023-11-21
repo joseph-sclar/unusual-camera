@@ -85,7 +85,7 @@ def generate_future_scenario(characters):
 
 
 
-def generate_images(api_key, characters, taken_image):
+def generate_images(api_key, characters, taken_image, user_prompt):
 
 
     image_data = None
@@ -125,8 +125,12 @@ def generate_images(api_key, characters, taken_image):
 
         # Generate with an image prompt
         url = "https://cloud.leonardo.ai/api/rest/v1/generations"
-
-        prompt =  generate_future_scenario(characters)
+        
+        if user_prompt:
+            prompt = user_prompt
+            pass
+        else:
+            prompt =  generate_future_scenario(characters)
 
 
         payload = {
