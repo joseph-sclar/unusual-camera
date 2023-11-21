@@ -28,9 +28,6 @@ To get the app up and running, just do the following:
 - **Describe the Characters**: Let us know who or what is in the picture.
 - **Generate Futuristic Images**: With the press of a button, watch as your picture transforms, giving you a unique look into the future.
 
-### Note on API Key
-
-The app uses an API key (`bf1b8993-25c5-4d19-9eba-6095ec283b78`) for generating images. Make sure to keep it secure!
 
 ## Usage
 
