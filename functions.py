@@ -180,7 +180,7 @@ def generate_images(api_key, characters, taken_image, user_prompt):
 
         payload = {
             "alchemy": True,
-            "presetStyle": "CINEMATIC",
+            "presetStyle": "PHOTOGRAPHY",
             "highResolution": True,
             "guidance_scale": 7,
             "height": 512,
